@@ -15,6 +15,16 @@ step4:type git status
 step5: type git add -A
        this adds the red files to staging area. Now we have to commit these files to local repository.
 
-step6: type gir -m"message here for log purposes" commit
-
+step6: type git commit -m"message here for log purposes"
+        ** note: now if we have not created a user in git we cant commit. so an add user and email message appears if you are first time user. 
+step7: for first time user
+        type git config --global user.email "xyz@xyz.com"
+        type git config --global user.name "type user name"
+        this adds user email and username if you are a first time user. Only after this git will allow you to commit.
+step8: repeat step6 to commit
+        commit details get displayed
+        now your local work folder files are inserted into local repo
+step9: to see logs
+       type git log
+       this will show commit logs 
 -->
